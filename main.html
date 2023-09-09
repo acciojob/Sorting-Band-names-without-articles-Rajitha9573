@@ -41,12 +41,18 @@
       }
     </style>
 
-    <ul id="band">let mp={};
+    <ul id="band">
+		
+		<li>Tajmahal</li>
+		<li>Victoria Memorial</li>
+		<li>The Virupaksha Temple</li>
+		</ul>
+		let mp={};
 let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
-let s=touristSpots.length;
+
 let articleLessArray=[];
 let articleLessItem=[];
-for(let i=0; i<s; i++)
+for(let i=0; i<touristSpots.length; i++)
 {
       articleLessItem =touristSpots[i].replace(/\bthe\b|\ban\b|\ba\b/gi, " ").trim();
 
@@ -58,7 +64,8 @@ let ans=[];
 for(let i of articleLessArray){
     ans.push(mp[i]);
 }
-console.log(ans);</ul>
+console.log(ans);
+	
 
     <script type="text/javascript" src="./script.js"></script>
   </body>
